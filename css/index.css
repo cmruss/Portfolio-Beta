@@ -140,10 +140,16 @@ table {
 html,
 body {
   font-size: 62.5%;
-  font-family: 'Dosis', sans-serif;
+  font-family: 'Inria Serif', serif;
+}
+html{
+  background-color: grey;
 }
 body {
-  width: 100vw;
+  width: 92.5%;
+  height: 95%;
+  margin: 2.5% auto;
+  background-color: whitesmoke;
 }
 p,
 li {
@@ -177,12 +183,18 @@ nav a {
   margin: 0 2%;
   text-decoration: none;
   font-size: 2rem;
+  color: grey;
 }
+
+nav a:hover{
+  color: #531c1f;
+}
+
 header {
   width: 85%;
-  margin: 10% 5%;
+  margin: 5% auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
 }
 @media (max-width: 500px) {
@@ -195,30 +207,35 @@ header .profile {
   text-align: center;
 }
 header .profile .profile-img {
-  width: 100%;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  object-position: 100% 0;
+  border-radius: 100%;
+  opacity: 0.9;
 }
 header .bio {
   margin: 0 0 0 5%;
 }
-header .bio address {
-  margin: 20% auto;
-  font-size: 2rem;
+address p{
+  margin: 1% auto;
+  font-size: 1.8rem;
 }
 header .bio h1 {
-  font-size: 4rem;
-}
-header .bio .contact {
-  margin: 2% 0;
   font-size: 2.4rem;
-  background: cadetblue;
-  color: antiquewhite;
-  border-radius: 2px;
+}
+header .bio h4 {
+  font-size: 1.8rem;
+}
+header .bio .statement {
+  margin: 3% 0;
+  font-size: 1.4rem;
+  width: 400px;
 }
 .about {
-  width: 85%;
-  margin: 5% auto;
+  margin: 10% auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: flex-start;
 }
 @media (max-width: 500px) {
@@ -233,38 +250,58 @@ header .bio .contact {
     margin: 10% auto;
   }
 }
+
+.about .listen .statement {
+  width: 400px;
+}
+
 .about div h2 {
-  font-size: 3.2rem;
+  font-size: 2rem;
 }
 .about .strengths {
-  border: 1px solid black;
+  box-shadow: 5px 2px 15px grey; 
   padding: 2%;
 }
 .about .strengths ul {
   margin: 5% 0 0 5%;
 }
 .experience {
-  width: 85%;
   margin: 5% 5%;
   display: flex;
   flex-wrap: wrap;
+  text-align: center;
 }
 .experience div {
   margin: 5% auto;
-  border: 1px solid black;
+  width: 400px;
   padding: 2%;
 }
+.experience div h4 {
+  font-size: 1.8rem;
+}
 .experience div h5 {
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 .experience div p {
+  font-size: 1.2rem;
   margin: 2%;
 }
+.experience .projects div {
+  padding: 5%;
+}
+.experience .projects a {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: grey;
+  font-weight: bold;
+}
+.experience .projects a:hover {
+  color: #531c1f;
+}
 footer {
-  padding: 5% 0;
-  width: 85%;
-  margin: 0 5%;
-  background-color: cadetblue;
+  padding: 2% 0;
+  width: 100%;
+  background-color: #531c1f;
   text-align: center;
   color: antiquewhite;
 }
