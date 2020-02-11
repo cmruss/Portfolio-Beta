@@ -9,7 +9,9 @@
 
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/index.css">
-    <link href="https://fonts.googleapis.com/css?family=Inria+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+
+    <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
 
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -17,47 +19,28 @@
 </head>
 
 <body>
-    <nav>
-        <a href="#">Home</a>
-        <a href=".about">About</a>
-        <a href="#">Portfolio</a>
-        <a href="#">Contact</a>
-    </nav>
     <header>
         <div class="profile">
-            <img class="profile-img" src="img/Cody.jpeg" alt="Cody_M_Russell">
+            <h1>Cody M Russell - Web Dev</h1>
+            <h2>Metro-Detroit, MI</h2><br>
             <address>
-                <p>tel: (248) 854-4642</p>
-                <p>em: cmrussell08@gmail.com</p>
+                <p><i class="fas fa-phone"></i> (248) 854-4642</p>
+                <p><i class="fas fa-envelope"></i> cmrussell08@gmail.com</p>
+                <a href="./resume/Resume.pdf" download><p><i class="fas fa-arrow-down"></i> resume</p></a>
             </address>
-        </div>
-        <div class="bio">
-            <h1>Cody M Russell - Web Dev</h1><br>
-            <h4>Lifelong Student</h4>
-            <div class="statement">
-                <P> I have a broad and flexible interest in many applications, and am always seeking to hone and increase my knowledge and experience in those areas of practical and applied skills.
-                </P>
-            </div>
         </div>
     </header>
     <section class="about">
-        <div class="listen">
-            <h2>What I Want</h2>
-            <div class="statement">
-                <p>
-                    My continual desire to learn has pushed my focus to familiarity with various professional fields; opthalmic and optometric practices, contract corporate painting, the automotive prototype and testing build process, as well as electronic assembly and prototyping.<br>                    It is my desire to enter into a field where that learning will never stop, that there's always something more to master.
-                </p>
-            </div>
-        </div>
-        <div class="strengths">
-            <h3>My Strengths</h3><br>
-            <ul>
-                <li>Problem Solving</li><br>
-                <li>Communication</li><br>
-                <li>Cool Under Pressure</li><br>
-                <li>Intensely Curious</li><br>
-                <li>Focused</li>
-            </ul>
+        <div class="statement">
+            <p>
+                Hey I'm Cody, a full time student at Lambda School on the Full Stack Web Development track, looking to land my first paid gig in the tech industry.
+            </p> 
+            <p>
+                Laguages I've learned so far include HTML, CSS, JavaScript, and SQL, with even more familiarity with libraries like Less, React, Node, and various smaller ancilliary libraries, and cannot wait to learn more.
+            </p>
+            <p>
+                When I'm not coding I enjoy working on art in various mediums: from   digital to oil to sculpture, tinkering with any number of mechanical and electrionic devices and making sure they work when putting them  all back together, and going on extended walks while listening to a beloved podcast.
+            </p>
         </div>
     </section>
     <section class="experience">
@@ -65,35 +48,46 @@
             <h3>Work History</h3>
             <div class="roush">
                 <h4>Roush Industries</h4>
-                <h5>Instrumentation Technician</h5>
+                <h5>Material, Instrumentation Technician</h5>
                 <p>Two years in vehichle and electronics prototyping in a wide variety of different applications as an instrumentation technician, from cars to amusement rides to autonomous vehichles.</p>
+            </div>
+            <div class="optical">
+                <h4>Patrick Lyons, O.D., Main Street Eyecare, Manzo Eyecare</h4>
+                <h5>Optician, Optical Manager</h5>
+                <p>Nine years of optimetric and opthalmic practice experience as an optician. Administered exams, dispensing, managed retail, accounting, repairs.. etc. For most every aspect of the field, I have experience in it.</p>
             </div>
             <div class="shields">
                 <h4>Sheilds Painting</h4>
                 <h5>Commercial Contract Painter</h5>
                 <p>Painted various commercial and private applications and learned a lot about how to hold a brush, definitely helped my artistic technique.</p>
             </div>
-            <div class="optical">
-                <h4>Patrick Lyons, O.D., Manzo Eyecare</h4>
-                <h5>Optician</h5>
-                <p>Eight years of optimetric and opthalmic practice experience as an optician. Administered exams, dispensing, managed retail, accounting, repairs, most every aspect of the field, I have experience in it.</p>
+            <div class="wayne">
+                <h4>Wayne State University</h4>
+                <h5>Financial Aid Assistant</h5>
+                <p>Financial aid assistant while attending college, mostly office work: reception, data entry, mailing, appointment handling.</p>
             </div>
         </div>
         <div class="projects">
             <h3>Portfolio</h3>
-            <div class="art-portfolio">
-                <a href="https://cmruss.github.io/portfolio/" target="_blank">Art Portfolio</a>
-            </div>
-            <div class="apod">
-                <a href="https://cmruss-nasa-apod.now.sh/" target="_blank">Nasa APOD App</a>
-            </div>
-            <div class="apod">
-                <a href="https://cmruss-nasa-apod.now.sh/" target="_blank">Nasa APOD App</a>
+            <div class="icon-grid">
+                <div class="art-portfolio">
+                    <a href="https://cmruss.github.io/portfolio/" target="_blank" rel='noopener'><i class="fas fa-paint-brush" title='Art Portfolio'></i></a>
+                </div>
+                <div class="apod">
+                    <a href="https://cmruss-nasa-apod.now.sh/" target="_blank" rel='noopener'><i class="fas fa-space-shuttle" title='Nasa APOD App'></i></a>
+                </div>
+                <div class="github">
+                    <a href="https://github.com/cmruss" target="_blank" rel='noopener'><i class="fab fa-github" title='github'></i></a>
+                </div>
+                <div class="linkedin">
+                    <a href="https://github.com/cmruss" target="_blank" rel='noopener'><i class="fab fa-linkedin-in" title='linkedin'></i></a>
+                </div>
             </div>
         </div>
     </section>
     <footer>
-        Copyright 2019 CMRuss
+        Copyright 2020 cmruss <br>
+        Background Photo by Nadine Shaabana on Unsplash 
     </footer>
 </body>
 

@@ -140,17 +140,27 @@ table {
 html,
 body {
   font-size: 62.5%;
-  font-family: 'Inria Serif', serif;
+  font-family: 'Montserrat', sans-serif;
 }
 html{
-  background-color: grey;
+  background-color: #313a3d;
+  background-attachment: fixed, fixed;
+  background-image: url("../img/overlay.png"), url("../img/detroit-img.jpg");
+  /* Photo by Nadine Shaabana on Unsplash */
+  background-position: top left, center center;
+  background-repeat: repeat, none;
+  background-size: auto, cover;
 }
 body {
-  width: 92.5%;
-  height: 95%;
-  margin: 2.5% auto;
-  background-color: whitesmoke;
+  width: 75%;
+  height: 75%;
+  margin: 5% auto;
+  background-color: rgba(245,245,245,0.8);
+  max-width: 100%;
+  border-radius: 5px;
 }
+
+
 p,
 li {
   font-size: 2rem;
@@ -160,42 +170,30 @@ th,
 td {
   font-size: 1.6rem;
 }
+h2 {
+  font-size: 2.7rem;
+}
 h3,
 h4 {
   font-size: 2.4rem;
 }
-.statement {
-  margin: 5% 0;
-}
-nav {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-  padding: 2%;
-}
-@media (max-width: 500px) {
-  nav {
-    width: 95%;
-    margin: 0 auto;
-  }
-}
-nav a {
-  margin: 0 2%;
+
+a {
   text-decoration: none;
-  font-size: 2rem;
   color: grey;
 }
 
-nav a:hover{
-  color: #531c1f;
+a :hover {
+  color: royalblue;
 }
 
 header {
-  width: 85%;
   margin: 5% auto;
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  font-size: 3rem;
 }
 @media (max-width: 500px) {
   header {
@@ -205,35 +203,26 @@ header {
 }
 header .profile {
   text-align: center;
+  padding-top: 25%;
 }
-header .profile .profile-img {
-  width: 250px;
-  height: 250px;
-  object-fit: cover;
-  object-position: 100% 0;
-  border-radius: 100%;
-  opacity: 0.9;
-}
-header .bio {
-  margin: 0 0 0 5%;
-}
+
 address p{
-  margin: 1% auto;
+  margin: 2% auto;
   font-size: 1.8rem;
 }
-header .bio h1 {
-  font-size: 2.4rem;
+
+address p i {
+color:grey;
 }
-header .bio h4 {
-  font-size: 1.8rem;
+
+
+address a p {
+  color: black;
 }
-header .bio .statement {
-  margin: 3% 0;
-  font-size: 1.4rem;
-  width: 400px;
-}
+
 .about {
-  margin: 10% auto;
+  margin: 0 auto;
+  padding: 25% 0;
   display: flex;
   justify-content: space-evenly;
   align-items: flex-start;
@@ -251,30 +240,42 @@ header .bio .statement {
   }
 }
 
-.about .listen .statement {
-  width: 400px;
+.about .statement {
+  width: 75%;
+  margin: 0 auto;
 }
 
-.about div h2 {
-  font-size: 2rem;
+.about .statement p {
+  text-indent: 20px;
 }
-.about .strengths {
-  box-shadow: 5px 2px 15px grey; 
-  padding: 2%;
-}
-.about .strengths ul {
-  margin: 5% 0 0 5%;
-}
+
 .experience {
-  margin: 5% 5%;
+  margin: 0 5%;
   display: flex;
   flex-wrap: wrap;
   text-align: center;
+  padding-bottom: 25%;
+}
+@media (max-width: 500px) {
+  .experience {
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    margin: 10% auto;
+  }
 }
 .experience div {
   margin: 5% auto;
-  width: 400px;
-  padding: 2%;
+  width: 50%;
+}
+@media (max-width: 500px) {
+  .experience div {
+    margin: 5% auto;
+    width: 95%;
+  }
+  .roush p, .optical p, .shields p, .wayne p {
+    display: none;
+    margin: 2%;
+  }
 }
 .experience div h4 {
   font-size: 1.8rem;
@@ -286,22 +287,43 @@ header .bio .statement {
   font-size: 1.2rem;
   margin: 2%;
 }
-.experience .projects div {
-  padding: 5%;
+.icon-grid {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
 }
+.icon-grid div {
+  width:125px;
+  height:125px;
+  line-height: 150px;
+  margin: 0;
+  padding: 0; 
+}
+
 .experience .projects a {
   font-size: 1.8rem;
-  text-decoration: none;
-  color: grey;
   font-weight: bold;
 }
 .experience .projects a:hover {
-  color: #531c1f;
+  color: royalblue;
 }
+
+.projects i {
+  font-size: 5rem;
+}
+
 footer {
   padding: 2% 0;
   width: 100%;
-  background-color: #531c1f;
+  background-color: rgba(49,58,61, 0.4);
+  font-size: 1.2rem;
   text-align: center;
-  color: antiquewhite;
+  color: whitesmoke;
 }
+
+/* * { 
+  outline: 1px solid red;
+  outline-offset: -1px;
+} */
